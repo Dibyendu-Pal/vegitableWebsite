@@ -58,7 +58,7 @@ function Items() {
                                                             <h4 className="card-title">{item.name}</h4>
                                                             <div className="options d-flex flex-fill">
                                                                 <select className="custom-select mr-1">
-                                                                    <option selected>Color</option>
+                                                                    <option selected>Weight</option>
                                                                     <option value="1">100G</option>
                                                                     <option value="2">200G</option>
                                                                     <option value="3">500G</option>
@@ -67,7 +67,7 @@ function Items() {
                                                             </div>
                                                         </div>
                                                         <div className="buy d-flex justify-content-between align-items-center">
-                                                            <div className="price text-success"><h5 className="mt-4">${item.price}</h5></div>
+                                                            <div className="price text-success"><h5 className="mt-4">₹{item.price}</h5></div>
                                                             <a href="#hh" id={item.id} className="btn btn-danger mt-3" onClick={addCartOnClick}><i className="fas fa-shopping-cart"></i> Add to Cart</a>
                                                         </div>
                                                     </div>
