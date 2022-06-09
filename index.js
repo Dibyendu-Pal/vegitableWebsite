@@ -16,10 +16,6 @@ app.use('/api/user', require('./routes/userRoutes'))
 app.use('/api/item', require('./routes/itemRoutes'))
 app.use('/api/admin', require('./routes/adminRoutes'))
 
-app.get('/', (req, res) => {
-  res.json({ name: "Dibyendu" })
-})
-
 
 if (process.env.NODE_ENV == "production") {
 
