@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom';
 
 function Cart() {
   const [itemnumber, setItemnumber] = useState(1)
@@ -32,12 +33,12 @@ function Cart() {
                       <div className="row mb-4 d-flex justify-content-between align-items-center">
                         <div className="col-md-2 col-lg-2 col-xl-2">
                           <img
-                            src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-shopping-carts/img5.webp"
-                            className="img-fluid rounded-3" alt="Cotton T-shirt" />
+                            src="images/v1.jpg"
+                            className="img-fluid rounded-3" alt="Tomato" />
                         </div>
                         <div className="col-md-3 col-lg-3 col-xl-3">
-                          <h6 className="text-muted">Shirt</h6>
-                          <h6 className="text-black mb-0">Cotton T-shirt</h6>
+                          <h6 className="text-black">Tomato</h6>
+                          <h6 className="text-muted">500g</h6>
                         </div>
                         <div className="col-md-3 col-lg-3 col-xl-2 d-flex">
                           <button id='minus1' className="btn btn-link px-2"
@@ -54,7 +55,7 @@ function Cart() {
                           </button>
                         </div>
                         <div className="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
-                          <h6 className="mb-0">€ 44.00</h6>
+                          <h6 className="mb-0">₹ 44.00</h6>
                         </div>
                         <div className="col-md-1 col-lg-1 col-xl-1 text-end">
                           <a href="#!" className="text-muted"><i className="fas fa-times"></i></a>
@@ -66,12 +67,12 @@ function Cart() {
                       <div className="row mb-4 d-flex justify-content-between align-items-center">
                         <div className="col-md-2 col-lg-2 col-xl-2">
                           <img
-                            src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-shopping-carts/img6.webp"
-                            className="img-fluid rounded-3" alt="Cotton T-shirt" />
+                            src="images/v1.jpg"
+                            className="img-fluid rounded-3" alt="Tomato" />
                         </div>
                         <div className="col-md-3 col-lg-3 col-xl-3">
-                          <h6 className="text-muted">Shirt</h6>
-                          <h6 className="text-black mb-0">Cotton T-shirt</h6>
+                          <h6 className="text-black">Tomato</h6>
+                          <h6 className="text-muted">500g</h6>
                         </div>
                         <div className="col-md-3 col-lg-3 col-xl-2 d-flex">
                           <button id='minus2' className="btn btn-link px-2"
@@ -88,7 +89,7 @@ function Cart() {
                           </button>
                         </div>
                         <div className="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
-                          <h6 className="mb-0">€ 44.00</h6>
+                          <h6 className="mb-0">₹ 44.00</h6>
                         </div>
                         <div className="col-md-1 col-lg-1 col-xl-1 text-end">
                           <a href="#!" className="text-muted"><i className="fas fa-times"></i></a>
@@ -100,12 +101,12 @@ function Cart() {
                       <div className="row mb-4 d-flex justify-content-between align-items-center">
                         <div className="col-md-2 col-lg-2 col-xl-2">
                           <img
-                            src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-shopping-carts/img7.webp"
-                            className="img-fluid rounded-3" alt="Cotton T-shirt" />
+                            src="images/v1.jpg"
+                            className="img-fluid rounded-3" alt="Tomato" />
                         </div>
                         <div className="col-md-3 col-lg-3 col-xl-3">
-                          <h6 className="text-muted">Shirt</h6>
-                          <h6 className="text-black mb-0">Cotton T-shirt</h6>
+                          <h6 className="text-black">Tomato</h6>
+                          <h6 className="text-muted">500g</h6>
                         </div>
                         <div className="col-md-3 col-lg-3 col-xl-2 d-flex">
                           <button id='minus3' className="btn btn-link px-2"
@@ -122,7 +123,7 @@ function Cart() {
                           </button>
                         </div>
                         <div className="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
-                          <h6 className="mb-0">€ 44.00</h6>
+                          <h6 className="mb-0">₹ 44.00</h6>
                         </div>
                         <div className="col-md-1 col-lg-1 col-xl-1 text-end">
                           <a href="#!" className="text-muted"><i className="fas fa-times"></i></a>
@@ -132,8 +133,8 @@ function Cart() {
                       <hr className="my-4" />
 
                       <div className="pt-5">
-                        <h6 className="mb-0"><a href="#!" className="text-body"><i
-                          className="fas fa-long-arrow-alt-left me-2"></i>Back to shop</a></h6>
+                        <h6 className="mb-0"><Link to="/items" className="text-body"><i
+                          className="fas fa-long-arrow-alt-left me-2"></i>Back to shop</Link></h6>
                       </div>
                     </div>
                   </div>
@@ -144,18 +145,23 @@ function Cart() {
 
                       <div className="d-flex justify-content-between mb-4">
                         <h5 className="text-uppercase">items 3</h5>
-                        <h5>€ 132.00</h5>
+                        <h5>₹ 132.00</h5>
+                      </div>
+
+                      <div className="d-flex justify-content-between mb-4">
+                        <h6 className="text-uppercase">Delivery Charges</h6>
+                        <h5>₹ 50</h5>
                       </div>
 
                       <hr className="my-4" />
 
                       <div className="d-flex justify-content-between mb-5">
                         <h5 className="text-uppercase">Total price</h5>
-                        <h5>€ 137.00</h5>
+                        <h5>₹ 182.00</h5>
                       </div>
 
                       <button type="button" className="btn btn-dark btn-block btn-lg"
-                        data-mdb-ripple-color="dark">Register</button>
+                        data-mdb-ripple-color="dark">Buy Now</button>
 
                     </div>
                   </div>
