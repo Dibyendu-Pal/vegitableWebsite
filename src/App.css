@@ -20,16 +20,37 @@
 	font-weight: 900;
 }
 
+@media only screen and (max-width: 992px) {
+	.cart-account-div {
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	.cart-account-div {
+		display: flex;
+		align-items: center;
+	}
+}
+
 @media only screen and (min-width: 600px) {
 	.grid-2 {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
+	}
+
+	.navbar-brand {
+		margin-right: 1.5rem;
 	}
 }
 
 @media only screen and (max-width: 600px) {
 	.grid-2 {
 		text-align: center;
+	}
+
+	.navbar-brand {
+		margin-right: 2px;
 	}
 }
 
